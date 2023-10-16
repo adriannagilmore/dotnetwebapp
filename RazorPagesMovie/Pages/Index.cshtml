@@ -1,0 +1,79 @@
+﻿@page
+@model RazorPagesMovie.Pages.Movies.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h2>Manual Display</h2>
+
+<div class="flex-container">
+    <div>
+        <img src="~/images/scream.jpg" width="150" />
+        <h5>Scream</h5>
+    </div>
+    <div>
+        <img src="~/images/dune.jpg" width="150" />
+        <h5>Dune</h5>
+    </div>
+    <div>
+        <img src="~/images/hating.jpg" width="150" />
+        <h5>The Hating Game</h5>
+    </div>
+    <div>
+        <img src="~/images/ghostbusters.jpg" width="150" />
+        <h5>Ghostbusters</h5>
+    </div>
+    <div>
+        <img src="~/images/Brave.jpg" width="150" />
+        <h5>Brave</h5>
+    </div>
+    <div>
+        <img src="~/images/img2.jpg" width="150" />
+        <h5>Random</h5>
+    </div>
+</div>
+
+<h2>Loading From Database</h2>
+
+<div class="flex-container">
+    @foreach (var item in Model.Movie)
+        {
+        <div>
+            <img src="~/images/img3.jpg" width="150" />
+            <h5>@Html.DisplayFor(modelItem => item.Title)</h5>
+        </div>
+        }
+    </div>
+
+<h2>Other</h2>
+
+<div class="flex-container">
+    <div>
+        <img src="~/images/friends.jpg" width="150" />
+        <h5>Friends</h5>
+    </div>
+    <div>
+        <img src="~/images/witcher.jpg" width="150" />
+        <h5>The Witcher</h5>
+    </div>
+    <div>
+        <img src="~/images/bigbang.jpg" width="150" />
+        <h5>Big Bang Theory</h5>
+    </div>
+    <div>
+        <img src="~/images/newgirl.jpg" width="150" />
+        <h5>New Girl</h5>
+    </div>
+    <div>
+        <img src="~/images/doctor.jpg" width="150" />
+        <h5>Doctor Who</h5>
+    </div>
+    <div>
+        <img src="~/images/img4.jpg" width="150" />
+        <h5>Yumm</h5>
+    </div>
+</div>
+
+
+
+

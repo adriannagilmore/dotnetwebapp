@@ -1,0 +1,62 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: url('/images/backgroundonly.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Barlow', sans-serif;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flex-container h5 {
+    text-align: center;
+}
+
+.flex-container div {
+    padding: 10px;
+    background-color: white;
+}
+
+.flex-container div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(37,33,82,.12), 0 4px 8px rgba(37,33,82,.06);
+}
+
+h2 {
+    padding-top: 50px;
+}
+
+#movieTable {
+    background-color: white;
+}
+
+#logo {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 1.5em;
+}
